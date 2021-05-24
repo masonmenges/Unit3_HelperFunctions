@@ -1,6 +1,7 @@
 import pandas as pd
 import random
 
+
 class RandomDataFrame:
     def __init__(self, df, random_state=None):
         self.df = df
@@ -18,6 +19,6 @@ class RandomDataFrame:
 
     def null_count(self):
         df = self.df
-        sum = df.isnull().sum().sum()
+        sum_null = df.isnull().sum().sum()
 
-        return sum
+        return sum_null
